@@ -20,7 +20,7 @@ class Ball:
     def bounce_ball(self):
         self.x += self.settings.ball_dx
         self.y += self.settings.ball_dy
-        if (self.x < self.radius) or (self.x > self.settings.width - self.radius):
+        if (self.x < self.radius) or (self.x > self.screen_rect.width - self.radius):
             self.settings.ball_dx *= -1
         if (self.y < self.radius):
             self.settings.ball_dy *= -1

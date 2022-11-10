@@ -11,7 +11,7 @@ class Paddle:
         self.reset_paddle()
         self.left = False
         self.right = False
-        self.dx = 20
+        self.dx = 50
         
     def blit_me(self):
         self.screen.blit(self.paddle,self.rect)
